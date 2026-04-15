@@ -34,10 +34,10 @@
           Nagarkar Gold & Pearls
         </h1> -->
         <a href="#">
-  <h1 class="cursor-pointer text-lg md:text-xl font-heading text-[#6b2c2c]">
-    Nagarkar Gold & Pearls
-  </h1>
-</a>
+          <h1 class="cursor-pointer text-lg md:text-xl font-heading text-[#6b2c2c]">
+            Nagarkar Gold & Pearls
+          </h1>
+        </a>
       </div>
 
       <!-- Hamburger -->
@@ -81,13 +81,12 @@
   <!-- Hero Section CONTENT  -->
   <main class="pt-20">
     <!--  HERO SECTION  -->
-    <section class="px-4 md:px-10 py-16 bg-[#611826] text-white relative overflow-hidden">
+    <section class=" text-white relative overflow-hidden md:bg-[#611826]">
 
-      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-[#611826]  md:px-10 py-16">
 
         <!-- LEFT CONTENT -->
-        <div data-aos="fade-right">
-
+        <div class="order-3 md:order-1 bg-[#611826] px-4 md:px-0" data-aos="fade-right">
           <!-- Tag -->
           <div class="inline-block px-4 py-1 border border-white/30 rounded-full text-xs tracking-widest mb-6">
             SINCE 1991 • PUNE'S TRUSTED JEWELLERS
@@ -124,10 +123,111 @@
         </div>
 
         <!-- RIGHT IMAGE -->
-        <div class="relative flex justify-center order-first md:order-last" data-aos="fade-left">
+        <div class="relative flex justify-center order-1 md:order-2 bg-[#611826] px-4 md:px-10" data-aos="fade-left">
           <!-- Main Image -->
           <img src="assets/photo-1611652022419-a9419f74343d.avif"
-            class="w-[320px] md:w-[400px] rounded-2xl shadow-xl object-cover" />
+            class="w-[220px] md:w-[350px] rounded-2xl shadow-xl object-cover" />
+        </div>
+
+
+        <!-- SERVICES (ONLY MOBILE) -->
+        <div class="order-2 md:hidden mt-6 bg-white text-black">
+          <div class="grid grid-cols-4 md:grid-cols-5 gap-6 text-center py-6 px-4">
+
+            <!-- ROW 1 -->
+            <div onclick="navigateToScheme()" class="cursor-pointer service-item">
+              <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-[#7a1f2b] flex items-center justify-center text-white
+            border-4 border-transparent 
+    hover:border-yellow-400 
+    transition-all duration-300 ease-in-out 
+    hover:scale-110
+            ">
+                <img class="w-8 h-8 invert" src="https://cdn-icons-png.flaticon.com/128/10150/10150740.png" />
+              </div>
+              <p class="mt-2 text-md font-semibold">Scheme</p>
+            </div>
+
+            <div onclick="navigateToBankDetails()" class="cursor-pointer service-item">
+              <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-[#7a1f2b] flex items-center justify-center text-white
+             border-4 border-transparent 
+    hover:border-yellow-400 
+    transition-all duration-300 ease-in-out 
+    hover:scale-110">
+                <img class="w-8 h-8 invert" src="https://cdn-icons-png.flaticon.com/128/2830/2830155.png" />
+              </div>
+              <p class="mt-2 text-md font-semibold">Bank</p>
+            </div>
+
+            <div onclick="navigateToKyc()" class="cursor-pointer service-item">
+              <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-[#7a1f2b] flex items-center justify-center text-white
+             border-4 border-transparent 
+    hover:border-yellow-400 
+    transition-all duration-300 ease-in-out 
+    hover:scale-110">
+                <img class="w-8 h-8 invert" src="https://cdn-icons-png.flaticon.com/128/10457/10457799.png" />
+              </div>
+              <p class="mt-2 text-md font-semibold">KYC</p>
+            </div>
+
+            <div onclick="navigateToRate()" class="cursor-pointer service-item">
+              <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-[#7a1f2b] flex items-center justify-center text-white
+             border-4 border-transparent 
+    hover:border-yellow-400 
+    transition-all duration-300 ease-in-out 
+    hover:scale-110
+            ">
+                <img class="w-8 h-8 invert" src="https://cdn-icons-png.flaticon.com/128/592/592015.png" />
+              </div>
+              <p class="mt-2 text-md font-semibold">Rate</p>
+            </div>
+
+            <div onclick="navigateTransactionHistory()" class="cursor-pointer service-item">
+              <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-[#7a1f2b] flex items-center justify-center text-white
+             border-4 border-transparent 
+    hover:border-yellow-400 
+    transition-all duration-300 ease-in-out 
+    hover:scale-110
+            ">
+                <img class="w-8 h-8 invert" src="https://cdn-icons-png.flaticon.com/128/2277/2277956.png" />
+              </div>
+              <p class="mt-2 text-md font-semibold">History</p>
+            </div>
+
+            <!-- ROW 2 (CENTERED) -->
+            <div onclick="navigateToMyOrder()" class="cursor-pointer col-start-2 md:col-start-2 service-item">
+              <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-[#7a1f2b] flex items-center justify-center text-white
+             border-4 border-transparent 
+    hover:border-yellow-400 
+    transition-all duration-300 ease-in-out 
+    hover:scale-110">
+                <img class="w-8 h-8 invert" src="https://cdn-icons-png.flaticon.com/128/10597/10597732.png" />
+              </div>
+              <p class="mt-2 text-md font-semibold">Order</p>
+            </div>
+
+            <div onclick="navigateToDigitalGold()" class="cursor-pointer service-item">
+              <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-[#7a1f2b] flex items-center justify-center text-white
+             border-4 border-transparent 
+    hover:border-yellow-400 
+    transition-all duration-300 ease-in-out 
+    hover:scale-110">
+                <img class="w-8 h-8 invert" src="https://cdn-icons-png.flaticon.com/128/10040/10040888.png" />
+              </div>
+              <p class="mt-2 text-md font-semibold">Gold</p>
+            </div>
+
+            <div onclick="navigateToUserProfile()" class="cursor-pointer service-item">
+              <div class="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full bg-[#7a1f2b] flex items-center justify-center text-white
+             border-4 border-transparent 
+    hover:border-yellow-400 
+    transition-all duration-300 ease-in-out 
+    hover:scale-110">
+                <img class="w-8 h-8 invert" src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" />
+              </div>
+              <p class="mt-2 text-md font-semibold">Profile</p>
+            </div>
+
+          </div>
         </div>
 
       </div>
@@ -141,7 +241,7 @@
   </main>
 
   <!-- Service Section -->
-  <section class="py-12 px-4 bg-white">
+  <section class="hidden md:block py-12 px-4 bg-white">
 
     <div class="max-w-5xl mx-auto">
 
@@ -213,7 +313,7 @@
     hover:border-yellow-400 
     transition-all duration-300 ease-in-out 
     hover:scale-110">
-            <img class="w-8 h-8 invert" src="https://cdn-icons-png.flaticon.com/128/10150/10150740.png" />
+            <img class="w-8 h-8 invert" src="https://cdn-icons-png.flaticon.com/128/10597/10597732.png" />
           </div>
           <p class="mt-2 text-md font-semibold">Order</p>
         </div>
